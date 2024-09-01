@@ -1,11 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>GradeStats - Statistics App</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="{% static 'login.css' %}">
 </head>
-<body>
+<body style="background-image: url('{% static 'Tu-sofia-logo.svg.png' %}')">
     <div class="container">
         <div class="dataContainer">
             <div class="label"> Faculty Number:</div>
@@ -15,7 +16,7 @@
             <div class="label"> EGN:</div>
             <input type="password">
         </div>
-        <img class="captcha" src="C:\Users\user\Downloads\captcha.png">
+        <img class="captcha" src="{% static 'captcha.png' %}">
         <div class="dataContainer">
             <div class="label"> Text from image:</div>
             <input type="text">
